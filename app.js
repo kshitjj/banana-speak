@@ -1,7 +1,7 @@
 let btnTranslate = document.querySelector(".submit-btn");
 let inputTranslate = document.querySelector(".inputArea .textarea");
 let output = document.querySelector(".output");
-let url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text=";
+let url = "https://api.funtranslations.com/translate/minion.json?text=";
 
 function getInputURL() {
     let inputText = inputTranslate.value;
@@ -17,7 +17,7 @@ function errorHandler(error){
 function doFetch() {
     fetch(getInputURL())
         .then(response => response.json())
-        .then(json=> ((output.textContent = (json.contents.text))))
+        .then(json=> ((output.textContent = (json.contents.translated))))
         .catch(errorHandler)
 }
 
