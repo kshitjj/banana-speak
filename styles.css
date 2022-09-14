@@ -1,0 +1,21 @@
+.input-translate {
+    width: 90%;
+    height: 10vh;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+body {
+    margin: 1rem;
+}
+
+.output-txt {
+    margin: 1rem 0rem;
+}
+
+.output {
+    border: 2px;
+    border-color: black;
+    border-style: dotted;
+    padding: 1rem;
+}
