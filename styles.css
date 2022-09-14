@@ -1,21 +1,154 @@
-.input-translate {
-    width: 90%;
-    height: 10vh;
-    display: block;
-    margin-bottom: 1rem;
+@import url(//db.onlinewebfonts.com/c/b406d1754e314482800109a210c3ef1a?family=ITC+Bauhaus);
+
+:root{
+    --minion-yellow: #f5e050;
+    --minion-blue: #0C457A;
+    --minion-black: #231F20;
+}
+body{
+    font-family: "ITC Bauhaus", sans-serif;
+    margin: 0px;
 }
 
-body {
+hr{
+    margin: 0px;
+    border: solid 20px;
+    border-color: var(--minion-black);
+}
+/* links */
+
+.links{
+    text-decoration: none;
+}
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
     margin: 1rem;
+    display: inline;
 }
 
-.output-txt {
+.link-active {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+/* inputArea */
+
+.inputArea{
+    padding: 2rem;
+    background-color: var(--minion-blue);
+}
+
+.inputArea .instruction{
+    color: var(--minion-yellow);
+    font-size: larger;
+}
+
+.inputArea .textarea{
+    font-size: 1.3rem;
     margin: 1rem 0rem;
+    display: block;
+    height: 12vh;
+    width: 600px;
+    border: solid 1px;
+    border-radius: .5rem;
 }
 
-.output {
-    border: 2px;
-    border-color: black;
-    border-style: dotted;
-    padding: 1rem;
+.inputArea .submit-btn{
+    background-color: var(--minion-yellow);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* outputArea */
+
+.outputArea{
+    background-color: var(--minion-yellow);
+    padding: 2rem;
+}
+
+.outputArea .text{
+    font-size: 1.5rem;
+    color: var(--minion-blue);
+}
+
+.outputArea .output{
+    width: fit-content; 
+    color: var(--minion-black);
+    font-size: 1.5rem;
+    text-align:left;
+    margin: 1rem 0rem;
+    padding: 1rem 1rem;
+    border: dotted 2px;
+    border-radius: 2rem;
+}
+
+/* navigation */
+
+.navigation{
+    background-color: var(--minion-blue);
+    padding: 2rem;
+}
+
+.navigation .nav-brand{
+    font-size: 2rem;
+    color: var(--minion-yellow);
+}
+
+.navigation .navpills{
+    text-align: right;
+}
+
+.navigation .links{
+    color: var(--minion-black);
+    font-size: 1.5rem;
+}
+
+/* header */
+
+.hero{
+    padding: 2rem;
+    background-color: var(--minion-yellow);
+}
+
+.hero .hero-img{
+    fill: var(--minion-blue);
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--minion-blue);
+}
+
+.hero .heading-inverted{
+    color: var(--minion-black);
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--minion-blue);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--minion-yellow);
+}
+
+.footer .links{
+    color: var(--minion-yellow);
+}
+
+.footer ul{
+    padding-inline-start: 0px;
 }
